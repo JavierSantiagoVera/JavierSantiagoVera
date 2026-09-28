@@ -37,6 +37,7 @@
 | Project | Problem & approach | Result | Links |
 |---|---|---|---|
 | **PercEVA-CVS** | Automated Critical View of Safety assessment in laparoscopic surgery video. EVA-02 encoder + gated Perceiver-style temporal head over cached frame embeddings. | **65.1 ± 1.3 mAP** vs 57.6 ± 0.4 (LG-CVS) on SAGES 2024 CVS | [Code](https://github.com/BCV-Uniandes/PercEVA-CVS) · [Project page](https://sergiocanar.github.io/perceva-cvs-page/) |
+| **CVS Inference Service** | Takes PercEVA-CVS from research code to a deployable service: ONNX export with numerical parity checks, INT8 quantization, session-based FastAPI for real-time 1 fps video, torch-free Docker image, reproducible latency benchmarks. | **3.4× faster** than PyTorch on CPU (930 → 275 ms/frame) with **no measurable mAP loss** (+0.3, 95% CI −0.4 to +0.9) | [Code](https://github.com/JavierSantiagoVera/cvs-inference-service) |
 | **CARDIUM** | Prenatal detection of congenital heart disease by fusing fetal echocardiography with maternal clinical records. New public dataset + model. | **F1 79.8 ± 4.8%** | [Code](https://github.com/BCV-Uniandes/Cardium) · [arXiv](https://arxiv.org/abs/2510.15208) |
 
 <!--
